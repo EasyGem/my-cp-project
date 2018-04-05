@@ -1,0 +1,24 @@
+.row{
+  border: 1px solid #ddd;
+  color: #555;
+  border-top: none;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.only_bot_border{
+  border: none;
+  border-bottom: #ddd 1px solid;
+}
+.icon{
+  cursor: pointer;
+}
+.icon_tourneys{
+  float: left;
+  cursor: pointer;
+  padding-right:10px;
+}
+.icon_opt{
+  cursor: pointer;
+  padding-right:10px;
+}

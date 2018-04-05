@@ -1,0 +1,242 @@
+/* HEADER */
+header.header {
+  position: relative;
+  margin-top: 50px;
+  background-position: top center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 20px 0 0px 0px;
+  color: #fff;
+}
+header.header::before {
+  top: 0;
+  left: 0;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/white-asperity.png);
+  z-index: 0;
+  opacity: 0.5;
+}
+header.header .game-list {
+  position: relative;
+  background-color: #00000088;
+  margin: 3rem 0 0 0;
+  width: 100%;
+  height: auto;
+  padding: 0.44rem 10px;
+}
+header.header .game-list li{
+  display: inline;
+  font-size: 1rem;
+  padding: 0.5rem;
+  transition: .25s;
+  color: #fff;
+}
+header.header .game-list li:hover{
+  background-color: #fff;
+  color: #000;
+}
+header.header .game-list li.active{
+  background-color: #fff;
+  color: #000;
+}
+header.header .game-list a{
+  text-transform: uppercase;
+  padding: 0.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+/* CONTENT */
+.content .tourney-block .image img{
+  width: 100%;
+}
+    /* INFO*/
+.content .tourney-block .info{
+  display: flex;
+  flex-direction: column;
+}
+.content .tourney-block .info h3{
+  margin: 0;
+}
+.content .tourney-block .info p{
+  font-size: 0.8rem;
+  line-height: 1.1;
+}
+.content .tourney-block .info > .row{
+  width: 100%;
+}
+.content .tourney-block .info .params p{
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 1.1;
+}
+.content .tourney-block .info .params > div{
+  padding: 0;
+}
+.content .tourney-block .info .params p.author_par{
+  font-weight: 400;
+}
+.content .tourney-block .info .params .right{
+  text-align: right;
+}
+.content .tourney-block .info .params .right .prize{
+  font-size: 1.6rem;
+  color: #337AB7;
+  cursor: pointer;
+  border-bottom: 1px dotted #337AB7;
+}
+.content .tourney-block .info .params .prize-info {
+  display: none;
+  font-weight: 500;
+  text-align: left;
+  position: absolute;
+  min-width: 150px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #337AB7;
+  z-index: 100;
+  right: 0;
+}
+.content .tourney-block .info .params .prize-info::before {
+    content: ''; 
+    position: absolute;
+    right: 10px; 
+    top: -16px;
+    border: 8px solid transparent;
+    border-bottom: 8px solid #337AB7;
+   }
+.content .tourney-block .info .params .prize-info ol{
+  font-weight: 400;
+  padding: 0 0 0 20px;
+}
+    /* FILTERS*/
+#show-filters {
+  background-color: #fff;
+  color: #337AB7;
+  transition: .25s;
+  border-color: #337AB7;
+}
+#show-filters:hover {
+  background-color: #337AB7;
+  color: #fff;
+  border-color: #337AB7;
+}
+.filters {
+  font-size: 0.8rem;
+  display: none;
+}
+.filters-hr {
+  margin-top: 0;
+}
+.filters form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.filters form .wrapper-fields{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+.filters form .wrapper{
+  margin-left: 5px;
+}
+.filters form .wrapper .form-group{
+  margin-bottom: 5px;
+}
+        /* LOCATION */
+.location-choice {
+  margin: 5px;
+}
+.location-choice ul{
+  margin: 0;
+  border: 1px solid #ccc;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0;
+}
+.location-choice li{
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding: 7px;
+}
+.location-choice li.active{
+  background-color: #eee;
+}
+.location-choice li.active select{
+  background-color: #eee;
+}
+.location-choice li:first-child {
+  border-radius: 5px 0 0 5px;
+}
+.location-choice li:last-child, .location-choice select, .field-tourneyoptions-town{
+  border-radius: 0 5px 5px 0;
+}
+.location-choice li:not(:first-child)::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: #ddd;
+  left: 0px;
+  top: 0;
+}
+.field-tourneyoptions-town {
+  margin: 0;
+}
+.location-choice li.local{
+  padding: 0px;
+}
+.location-choice #tourneyoptions-town{
+  border: none;
+  padding: 2px 5px;
+}
+.location-choice select{
+  cursor: pointer;
+  text-align: center;
+  font-size: .8rem;
+  padding: 0px 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  box-shadow: none;
+  height: 32px;
+}
+.location-choice select:focus{
+  outline: none;
+  box-shadow: none;
+}
+        /* SEARCH */
+.search-field {
+  margin: 5px;
+}
+.search-field .field-tourneyoptions-search_text{
+  margin: 0px;
+}
+.search-field .field-tourneyoptions-search_text input:focus{
+  outline: none;
+  box-shadow: none;
+  border-color: #337AB7;
+}
+        /* TENSE */
+.tense {
+  margin: 5px;
+}
+
+.status #tourneyoptions-status label{
+  margin-left: 5px;
+}
+@media screen and (max-width:767px) {
+  header.header h2{
+    font-size: 1.5rem;
+  }
+}

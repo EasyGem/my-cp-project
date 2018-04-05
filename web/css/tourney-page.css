@@ -1,0 +1,126 @@
+/* TOURNEY */
+.content .tourney-block .image img{
+  width: 100%;
+}
+/* INFO*/
+.content .tourney-block{
+  display: flex;
+}
+.content .tourney-block .info{
+  display: flex;
+  flex-direction: column;
+}
+.content .page-title span.games{
+  font-size: 1.5rem;
+  color: #ccc;
+  vertical-align: middle;
+}
+.content .tourney-block .info p{
+  font-size: 1rem;
+  line-height: 1.1;
+}
+.content .tourney-block .info > .row{
+  width: 100%;
+}
+.content .params{
+  margin-top: 1rem;
+}
+.content .params p{
+  margin: 1rem 0;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.1;
+}
+.content .params .regular p{
+  font-weight: 400;
+}
+b, strong {
+  font-weight: 600;
+}
+.content .params > div{
+  padding: 0;
+}
+.content .params p.author_par{
+  font-weight: 400;
+}
+.content .params .right{
+  text-align: right;
+}
+.content .params .right .prize{
+  font-size: 2rem;
+  color: #337AB7;
+  cursor: pointer;
+  border-bottom: 1px dotted #337AB7;
+}
+.content .params .prize-info {
+  display: none;
+  font-weight: 500;
+  text-align: left;
+  position: absolute;
+  min-width: 150px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #337AB7;
+  z-index: 100;
+  right: 0;
+}
+.content .params .prize-info::before {
+  content: ''; 
+  position: absolute;
+  right: 10px; 
+  top: -16px;
+  border: 8px solid transparent;
+  border-bottom: 8px solid #337AB7;
+}
+.content .params .prize-info ol{
+  font-weight: 400;
+  padding: 0 0 0 20px;
+}
+.content .params h3 span{
+  font-size: 0.8rem;
+}
+.fa.fa-external-link {
+  font-size: 1rem;
+}
+a.take-part {
+  font-size: 1.2rem;
+}
+.social-icons a{
+  margin-right: 5px;
+  font-size: 1.6rem;
+}
+@media only screen and (max-width : 767px) {
+  .content {
+    padding: 15px;
+  }
+  .content .params {
+    margin-top: 1rem;
+  }
+  .content .params .right {
+    text-align: left;
+  }
+  .content .params p{
+    font-size: 0.9rem;
+  }
+  .content .params ol{
+    font-size: 0.9rem;
+    padding-left: 10px;
+  }
+  a.take-part {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  .content .tourney-block .info p{
+    font-size: 0.9rem;
+  }
+  .content .params .prize-info {
+    right: unset;
+    left: 0px;
+  }
+  .content .params .prize-info::before {
+    right: unset;
+    left: 20px;
+  }
+}

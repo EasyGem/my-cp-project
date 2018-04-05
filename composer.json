@@ -1,0 +1,31 @@
+{
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "~2.0.5",
+        "yiisoft/yii2-bootstrap": "~2.0.0",
+        "yiisoft/yii2-swiftmailer": "~2.0.0",
+        "bower-asset/jquery": "@stable",
+        "bower-asset/bootstrap": "@stable",
+        "bower-asset/jquery-ui": "@stable",
+        "bower-asset/jquery.inputmask": "@stable",
+        "bower-asset/punycode": "@stable",
+        "fxp/composer-asset-plugin": "v1.1.4",
+        "kartik-v/yii2-krajee-base": "dev-master",
+        "kartik-v/yii2-widget-datepicker": "@dev",
+        "vova07/yii2-imperavi-widget": "*"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "~2.0.0",
+        "yiisoft/yii2-gii": "~2.0.0",
+        "yiisoft/yii2-faker": "~2.0.0",
+
+        "codeception/base": "^2.2.3",
+        "codeception/verify": "~0.3.1",
+        "codeception/specify": "~0.4.3"
+    },
+    "extra": {
+       "asset-installer-paths": {
+         "bower-asset-library": "vendor/bower"
+       }
+    }
+}

@@ -1,0 +1,47 @@
+.row{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  color: #555;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.row .item{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 15px;
+}
+.only_bot_border{
+  border: none;
+  border-bottom: #ddd 1px solid;
+}
+.icon{
+  cursor: pointer;
+}
+.icon_tourneys{
+  float: left;
+  cursor: pointer;
+  padding-right:10px;
+}
+.icon_opt{
+  cursor: pointer;
+  padding-right:10px;
+}
+.body-content {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.row.authors {
+  border-top: 1px solid #ccc;
+}
